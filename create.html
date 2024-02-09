@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Recipe Book</title>
+    <link rel="icon" href="pie_icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            text-align: left;
+            font-family: Arial, sans-serif;
+            min-height: 130vh;
+        }
+        table, form {
+            text-align: left;
+            width: 45%;
+            margin: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            padding-left: 12px;
+            text-align: left;
+        }
+        th, .highlight {
+            background-color: #f2f2f2;
+        }
+        .form-section {
+            text-align: left; /* Aligns content to the left */
+            width: 60%;
+            margin: 80; /* Keeps the form section centered */
+        }
+        form {
+            padding-left: 20px; /* Adds some padding inside the form for better alignment */
+        }
+        .email-button {
+            display: inline-block;
+            padding: 10px 50px;
+            background-color: darkolivegreen;
+            color: #f2f2f2;
+            margin-left: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+      </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="logo.jpg" alt="Logo" width="140">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create Your Book</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Recipe Book Pricing Options</h2>
+
+        <table>
+          <tr>
+            <th>Book Size</th>
+            <th>Number of Recipes</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Small</td>
+            <td>Up to 30 recipes</td>
+            <td>$19.99</td>
+          </tr>
+          <tr class="highlight">
+            <td>Medium</td>
+            <td>31 to 60 recipes</td>
+            <td>$29.99</td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td>61 to 100 recipes</td>
+            <td>$39.99</td>
+          </tr>
+        </table>
+        
+        <div class="form-section">
+          <h2>Select Your Book Size</h2>
+          <form>
+            <input type="radio" id="small" name="bookSize" value="small">
+            <label for="small">Small</label><br>
+            
+            <input type="radio" id="medium" name="bookSize" value="medium" checked>
+            <label for="medium">Medium</label><br>
+            
+            <input type="radio" id="large" name="bookSize" value="large">
+            <label for="large">Large</label><br>
+            <p><a href="mailto:ella.lesperance@outlook.com" class="email-button">Submit an Inquiry!</a></p>
+            <br><br>
+          </form>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Sous Simple</p>
+    </footer>
+</body>
+</html>

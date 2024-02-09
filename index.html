@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - SS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pie_icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            font-family: serif;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-top: 50px;
+            text-align: center;
+            text-size-adjust: 20%;
+            color: white;
+            background-image: url('background.jpg');
+            font-size: large;
+            line-height: 170%;
+            background-size: cover;
+            min-height: 60vw;
+            background-position: center;
+            background-color: black;
+        }
+        table {
+            width: 140%; /* Adjusted to fit next to the image */
+            margin-left: 100px;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 5px;
+            text-align: left;
+            color: white;
+        }
+        th {
+            background-color: rgb(230, 219, 202);
+            color: black; 
+        }
+        .recipe-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left; /* Align text to the left */
+        }
+        .recipe-image {
+            text-align: center;
+            margin-right: 20px; /* Adds some space between the image and the table */
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="logo.jpg" alt="Logo" width="140">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create Your Book</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2><u>Welcome to Recipe Book Creations<br></u></h2>
+            <h3>Create your personalized recipe book with your 
+                own culinary masterpieces.</h3>
+            <p> We believe that every dish tells a story, a savory 
+                narrative of culture, tradition, and personal touch. 
+                Our unique service transforms your culinary masterpieces 
+                into a beautifully curated recipe book, turning your kitchen
+                 experiments and family favorites into a legacy to cherish 
+                 and share. <br>
+            </p>
+            <h3>How does it work?</h3>
+            <p>Simply capture the essence of your dishes with a photo. 
+                Whether it's a Sunday family dinner, a festive feast, or 
+                a simple Tuesday taco night, snap a picture of your culinary 
+                creations, jot down your recipe, and send it our way. Our team 
+                of design gourmets and editorial chefs will then whip up a 
+                stunning recipe book that not only showcases your dishes in 
+                high-definition glory but also narrates your culinary journey 
+                with elegance and flair.<br></p>
+
+        </section> <br>
+        
+        <!-- Recipe and Image Container -->
+        <div class="recipe-container">
+            <div class="recipe-image">
+                <img src="biscuit.jpg" alt="Biscuit" style="max-width:100%; height:auto;">
+                <p>(File Input)</p>
+            </div>
+            <!-- Adding a table of Recipe Categories -->
+            <table>
+                <thead>
+                    <tr>
+                      <th>Ingredient</th>
+                      <th>Measurement</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>Buttermilk</td>
+                        <td>1 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Flour</td>
+                        <td>2 cups</td>
+                    <tr>
+                        <td>Baking powder</td>
+                        <td>1 tablespoon</td>
+                    </tr>
+                    <tr>
+                        <td>Baking soda</td>
+                        <td>1/2 tablespoon</td>
+                    </tr>
+                    <tr>
+                        <td>Salt</td>
+                        <td>Pinch</td>
+                    </tr>
+                    <tr>
+                        <td>Shortening</td>
+                        <td>Size of an egg</td>
+                    </tr>
+              </tbody>
+              
+        </table>
+        
+    
+    <footer>
+        <p>&copy; 2024 Sous Simple</p>
+    </footer>
+</body>
+</html>
