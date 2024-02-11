@@ -1,106 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: white;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-    background-color: rgb(235, 225, 213);
-    color: darkolivegreen;
-    line-height: 1.6;
-}
-
-.recipe-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.recipe-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-}
-
-th, td {
-    border: 1px solid white;
-    padding: 8px;
-    text-align: left;
-    color: white;
-}
-
-th {
-    background-color: rgb(230, 219, 202);
-    color: black;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
+        font-family: Arial, sans-serif;
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-
+    
+    header {
+        background-color: white;
+        color: white;
+        padding-right: 60px;
+        padding-left: 20px;
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Space between items */
+        align-items: center; /* Align items vertically */
+        height: 120px;
+    }
+    
+    nav ul {
+        font-family: serif;
+        font-size: large;
+        list-style: none; /* Remove list bullets */
+        display: flex; /* Align list items in a row */
+    }
+    
     nav ul li {
-        margin: 10px 0;
+        margin-left: 20px; /* Space between menu items */
+        padding-left: 30px;
+        margin-bottom: -10px;
+        margin-top: 10px; 
+    } 
+    
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        padding-top: -20px; 
+        
     }
-
-    .recipe-container {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
+    
     main {
-        padding: 10px;
+        font-family: serif;
+        padding-left: 40px;
+        padding-top: 30px;
+        text-align: left;
+        text-decoration-color: black;
+        color: darkolivegreen;
+        background-color: rgb(235, 225, 213);
+        background-image: url('altbackground.jpeg');
+        background-position: right;
+        background-size: 45%;
+        min-height: 100vh;
+        background-position: right;
+        background-repeat: no-repeat;
+        line-height: 300%;
+        
     }
 
-    .recipe-container {
-        margin-top: 10px;
+    h2 {
+        text-decoration-line: underline;
     }
-}
+
+    input[type=submit], input[type=button]  {
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px 50px;
+        background-color: darkolivegreen;
+        color: white;
+        margin-left: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+
+
+    }
+
+
+    input[type=text], input[type=file], input[type=email], input[type=message] {
+        text-align: left;
+        background-color: white;
+        outline-width: 20px; 
+        outline-color: darkolivegreen;
+        color: darkolivegreen;
+        padding-right: 320px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 10px 2px; 
+        cursor: pointer;  
+    }
+
+    form {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
