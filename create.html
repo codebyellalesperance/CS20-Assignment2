@@ -37,7 +37,8 @@
         }
         .email-button {
             display: inline-block;
-            padding: 10px 50px;
+            padding-right: 10px;
+            padding-top: -10px;
             background-color: darkolivegreen;
             color: #f2f2f2;
             margin-left: 10px;
@@ -45,6 +46,28 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
+        @media (max-width: 430px) {
+            main {
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 5%;
+            }
+            table, .recipe-image {
+                width: 100%; /* Makes the table and image use full width */
+                margin-right: 0; /* Removes the margin to fit the screen */
+                margin-left: 0;
+            }
+            .email-button {
+                display: inline-block;
+                padding: 5px 30px;
+                background-color: darkolivegreen;
+                color: #f2f2f2;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }  
 
       </style>
 </head>
